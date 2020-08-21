@@ -1,14 +1,12 @@
-
-
 <div class="banner">
-  <h1> Stupid Coaching</h1>
-  <div id='you'>
+  <h1 id="title">Stupid Coaching</h1>
+  <div id='you' class="answer">
     <p><%= @question %></p>
-    <p><em>"-You"</em></p>
+    <p><em>-You</em></p>
   </div>
-  <div id="coach">
-    <p><%= @answer %></p>
-    <p><em>"-Your coach"</em></p>
+  <div id="coach" class="answer">
+    <p><strong><%= @answer %></strong> </p>
+    <p><em>-Your coach</em></p>
   </div>
 
   <%= link_to 'Ask a new question', ask_path %>

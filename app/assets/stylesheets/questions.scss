@@ -3,25 +3,65 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $gray: #F4F4F4;
+$white: #ffffff;
 
 body{
-  background-color: $gray;
+  background-color: $white;
+  font-family: montserrat;
 }
 
 .banner {
-  background: $gray;
+  background: $white;
+  padding: 20px 30px;
   h1 {
     font-size: 50px;
   }
 }
 #coach{
   background-color: #fffde1;
-  border-left: 3px solid lightgrey;
-  height: 30px;
 }
 #you{
   background-color: #ffffff;
-  border-left: 3px solid lightgrey;
-  height: 30px
-  ;
+}
+
+.answer{
+  border-left: 8px solid lightgrey;
+  height: 90px;
+  padding-left: 10px;
+  display: flow-root;
+  margin-bottom: 20px;
+}
+
+#title{
+  font-size: 50px;
+  font-weight: normal;
+  font-family: roboto;
+}
+
+form{
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.input{
+  width: 90%;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 25px;
+  padding-left: 21px;
+  border: 2px $gray solid;
+}
+
+.submit{
+  flex-grow: 1;
+  color: $white;
+  background-color: #0169d9;
+  border-radius: 0px 10px 10px 0px;
+}
+
+a {
+  color: darkseagreen;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
 }
